@@ -1,0 +1,98 @@
+{
+    "data" : [
+  {
+    "id": 1,
+    "title": "Household Services V2",
+    "description": "Created a full-stack service booking platform with admin controls and responsive UI.",
+    "technologies" : ["Vue.js", "Flask", "Redis", "Celery", "Bootstrap", "Figma"],
+    "links" : {
+        "github": "#",
+        "vercel" : "#"
+    },
+    "about" : "This is a webapp designed to help people search for services. Users are monitored by the admin through an admin panel. Integrated Celery + Redis for background jobs; designed flow using Figma and Bootstrap.",
+    "process" : [
+        "Designed flow using Figma",
+        "Planned models and ER design",
+        "Integrated Celery and Redis for background jobs",
+        "Developed responsive UI with Bootstrap"
+    ],
+    "features" : [
+        "Admin Panel",
+        "Service Booking",
+        "Role Based Access",
+        "Background Job Processing",
+        "Responsive UI"
+    ],
+    "images": ["/household.png", "https://via.placeholder.com/152"]
+  },
+  {
+    "id": 2,
+    "title": "IITM Resources Hub",
+    "description": "Built a student-focused resource-sharing platform with authentication and real-time updates.",
+    "technologies" : ["Next.js", "Firebase", "Tailwind CSS"],
+    "links" : {
+        "github": "#",
+        "vercel" : "#"
+    },
+    "about" : "A platform for IITM students to share and access resources. Leveraged AI tools to improve UI/UX and optimize development time. Gained 40+ users and continues to be updated monthly.",
+    "process" : [
+        "Planned features and user flow",
+        "Implemented authentication and real-time updates with Firebase",
+        "Used Tailwind CSS for responsive design",
+        "Integrated AI tools for UI/UX improvement"
+    ],
+    "features" : [
+        "Authentication",
+        "Real-time Updates",
+        "Resource Sharing",
+        "Responsive Design"
+    ],
+    "images": ["https://via.placeholder.com/150", "https://via.placeholder.com/153"]
+  },
+  {
+    "id": 3,
+    "title": "Sponsorship Platform",
+    "description": "Developed a platform connecting influencers with sponsors, focusing on simplicity and visualizations.",
+    "technologies" : ["Flask", "Jinja", "SQLAlchemy", "Matplotlib"],
+    "links" : {
+        "github": "#",
+        "vercel" : "#"
+    },
+    "about" : "A web platform to connect influencers and sponsors. Implemented charting via Matplotlib and refined backend models to overcome real-time issues.",
+    "process" : [
+        "Designed backend models",
+        "Implemented charting with Matplotlib",
+        "Refined structure mid-development",
+        "Focused on simplicity and visualizations"
+    ],
+    "features" : [
+        "Influencer-Sponsor Matching",
+        "Data Visualization",
+        "Simple UI"
+    ],
+    "images": ["/householdv1.webp"]
+  },
+  {
+    "id": 4,
+    "title": "2D Games Portfolio",
+    "description": "Built interactive games including Infinite Runner, Ping Pong, and Maze Beater.",
+    "technologies" : ["JavaScript"],
+    "links" : {
+        "github": "#",
+        "vercel" : "#"
+    },
+    "about" : "A collection of interactive 2D games built in JavaScript, strengthening understanding of algorithms, animation, and UI logic.",
+    "process" : [
+        "Designed game logic and UI",
+        "Implemented animations",
+        "Tested and refined gameplay"
+    ],
+    "features" : [
+        "Multiple Games",
+        "Interactive Gameplay",
+        "Custom Animations"
+    ],
+    "images": ["https://via.placeholder.com/150", "https://via.placeholder.com/154"]
+  }
+]
+}
