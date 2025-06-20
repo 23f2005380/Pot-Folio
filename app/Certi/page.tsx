@@ -37,7 +37,7 @@ export default function Certificate() {
                             height={240}
                             className="certificateImage rounded-lg mb-4 border border-gray-200"
                             onClick={(e) => {
-                                console.log(e.target.src)
+                              
                                 setImageSrc(data)
                                 setImageShow("flex")
                             }}
