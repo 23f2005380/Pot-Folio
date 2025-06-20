@@ -429,3 +429,12 @@ transform: rotate(0deg);
   
   opacity: 0;
 }
+
+.cardProject {
+  scale: 1;
+  transition: 1s;
+}
+
+.cardProject:hover {
+  scale: 1.05;
+}

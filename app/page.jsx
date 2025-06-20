@@ -26,7 +26,31 @@ export default function Home() {
                 backgroundColor: "rgba(11, 25, 44, 0.8)",
               }}
             >
+              <div className="flex">
               <h2 className="text-xl font-bold text-white mb-4">{array.title}</h2>
+         <div className="pl-2 flex" >
+              {array.links.github ? 
+              <a href={array.links.github}  className="flex justify-center">
+                Github
+              <img
+                            src={`https://img.icons8.com/color/48/000000/github.png`}
+                            alt={"github"}
+                            title={"github"}
+                            className="w-8 h-8 mr-2"
+                          />
+                             
+                          </a> : "" }
+              {array.links.vercel ? 
+              <a href={array.links.vercel}  className="flex justify-center">
+                Vercel
+              <img
+                            src={`/vercel.png`}
+                            alt={"github"}
+                            title={"github"}
+                            className="w-8 h-8 mr-2"
+                          />
+                          </a> : "" }
+</div></div>
               <div className="mb-4">
                 <h3 className="text-lg font-semibold text-white">Overview</h3>
                 <p className="text-sm text-gray-200">{array.info}</p>
@@ -54,6 +78,20 @@ export default function Home() {
                           key={index}
                           className="flex items-center justify-center p-2 border rounded bg-gray-200 shadow-sm"
                         >
+                          {value == "jinja" ? 
+                          <img
+                            src="https://img.icons8.com/?size=100&id=ozhjyQgunVVO&format=png&color=000000"
+                            alt={value}
+                            title={value}
+                            className="w-8 h-8 mr-2"
+                          /> :
+                          value == "SqlAlchemy" ? 
+                          <img
+                            src={`https://img.icons8.com/color/48/000000/sql.png`}
+                            alt={value}
+                            title={value}
+                            className="w-8 h-8 mr-2"
+                          /> : 
                           <img
                             src={`https://img.icons8.com/color/48/000000/${value
                               .toLowerCase()
@@ -61,14 +99,23 @@ export default function Home() {
                             alt={value}
                             title={value}
                             className="w-8 h-8 mr-2"
-                          />
+                          /> }
                           <span className="text-sm">{value}</span>
                         </div>
                       ))
                     : ""}
                 </ul>
               </div>
+               <div className="mb-4">
+                <h3 className="text-lg font-semibold text-white">Links to Games</h3>
+                
+              {array.listLinks ? array.listLinks.map((value,index) => (
+                
+                <li className="text-[#5a84d2]"><a href={value[1]}>{value[0]}</a></li>
+    )) : ""}
               <div>
+                </div>
+              
                 <h3 className="text-lg font-semibold text-white">Features</h3>
                 <ul className="list-disc list-inside text-sm text-gray-200">
                   {array.features
@@ -78,6 +125,7 @@ export default function Home() {
                     : ""}
                 </ul>
               </div>
+
             </div>
 
             <div
@@ -283,7 +331,7 @@ export default function Home() {
               {cards[0].map((card, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 flex justify-center items-center"
+                  className="flex-shrink-0 flex justify-center items-center cardProject"
                   style={{
                     width: "31.9%",
                     height: "20vh",
@@ -296,6 +344,8 @@ export default function Home() {
                   }}
                   onClick={() => loadCardInfo(index)}
                 >
+                  <div className="absolute justify-left items-start top-[2px] left-[2px] bg-[#0b192c] p-1 rounded" style={{fontSize : "18px", fontWeight : "400", color : "cyan"}}>
+                  {card.title}</div>
                   <img
                     src={card.img}
                     alt={card.title}

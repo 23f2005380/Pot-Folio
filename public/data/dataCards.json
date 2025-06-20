@@ -4,10 +4,10 @@
     "id": 1,
     "title": "Household Services V2",
     "description": "Created a full-stack service booking platform with admin controls and responsive UI.",
-    "technologies" : ["Vue.js", "Flask", "Redis", "Celery", "Bootstrap", "Figma"],
+    "technologies" : ["Vue-js", "Flask", "Redis", "Celery", "Bootstrap", "Figma"],
     "links" : {
-        "github": "#",
-        "vercel" : "#"
+        "github": "https://github.com/23f2005380/23f2005380_Housing",
+        "vercel" : ""
     },
     "about" : "This is a webapp designed to help people search for services. Users are monitored by the admin through an admin panel. Integrated Celery + Redis for background jobs; designed flow using Figma and Bootstrap.",
     "process" : [
@@ -29,10 +29,10 @@
     "id": 2,
     "title": "IITM Resources Hub",
     "description": "Built a student-focused resource-sharing platform with authentication and real-time updates.",
-    "technologies" : ["Next.js", "Firebase", "Tailwind CSS"],
+    "technologies" : ["nextjs", "Firebase", "tailwindcss"],
     "links" : {
-        "github": "#",
-        "vercel" : "#"
+        
+        "vercel" : "https://iitm-resources.vercel.app/"
     },
     "about" : "A platform for IITM students to share and access resources. Leveraged AI tools to improve UI/UX and optimize development time. Gained 40+ users and continues to be updated monthly.",
     "process" : [
@@ -47,16 +47,16 @@
         "Resource Sharing",
         "Responsive Design"
     ],
-    "images": ["https://via.placeholder.com/150", "https://via.placeholder.com/153"]
+    "images": ["/Resource-Sharing-in-Library.jpg", "/2ebc04de16bdc5368e930b89cf6186d1ba21de6c_2_1035x492.jpeg", "/ba19e8a73fac9d12dc3a3b983a73e20ee057fe5c_2_1035x517.png"]
   },
   {
     "id": 3,
     "title": "Sponsorship Platform",
     "description": "Developed a platform connecting influencers with sponsors, focusing on simplicity and visualizations.",
-    "technologies" : ["Flask", "Jinja", "SQLAlchemy", "Matplotlib"],
+    "technologies" : ["Flask", "jinja", "SqlAlchemy", "Matplotlib"],
     "links" : {
-        "github": "#",
-        "vercel" : "#"
+        "github": "https://github.com/Aman-iitm-10/HouseHold-Services",
+        "vercel" : ""
     },
     "about" : "A web platform to connect influencers and sponsors. Implemented charting via Matplotlib and refined backend models to overcome real-time issues.",
     "process" : [
@@ -92,6 +92,16 @@
         "Interactive Gameplay",
         "Custom Animations"
     ],
+    "listLinks" : [
+        [
+        "Infinite runner ",
+        "https://studio.code.org/projects/gamelab/TYmZF7_QHToGZX_a33Ezhb_kHqwVFQ1ijoXDhEISnJE"
+        ],
+        [
+        "Ping Pong ",
+        "https://studio.code.org/projects/gamelab/GK92d2A_Z378Jj7vPXpRXFf-iFnR-BQstioYXwfH41k"],[
+        "Maze Beater" ,
+        "https://studio.code.org/projects/gamelab/Sb1C6wBazxUmluiJk6iT3NeNRKlUhsw272-U-6YzDms"]],
     "images": ["https://via.placeholder.com/150", "https://via.placeholder.com/154"]
   }
 ]
