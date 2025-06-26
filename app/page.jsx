@@ -12,10 +12,18 @@ import Details from "../public/data/Detauls.json";
 export default function Home() {
   // let [cardWidth, setCardWidth] = useState(31.9 + "%");
    let cardWidth = "31.9%"
-  if (window.document.body.clientWidth < 500){
+   try {
+ if (window.document.body.clientWidth < 500){
    cardWidth = 100+"%"
       // setCardWidth(100+"%");
   }
+
+   }
+   catch(erro){
+    console.log("Could not set window")
+   }
+
+ 
   const cards = [
     cardsData["data"].map((array, index) => {
       return {
