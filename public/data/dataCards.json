@@ -78,8 +78,8 @@
     "description": "Built interactive games including Infinite Runner, Ping Pong, and Maze Beater.",
     "technologies" : ["JavaScript"],
     "links" : {
-        "github": "#",
-        "vercel" : "#"
+        "github": "",
+        "vercel" : ""
     },
     "about" : "A collection of interactive 2D games built in JavaScript, strengthening understanding of algorithms, animation, and UI logic.",
     "process" : [
@@ -102,7 +102,7 @@
         "https://studio.code.org/projects/gamelab/GK92d2A_Z378Jj7vPXpRXFf-iFnR-BQstioYXwfH41k"],[
         "Maze Beater" ,
         "https://studio.code.org/projects/gamelab/Sb1C6wBazxUmluiJk6iT3NeNRKlUhsw272-U-6YzDms"]],
-    "images": ["https://via.placeholder.com/150", "https://via.placeholder.com/154"]
+    "images": ["/game.jpg", "https://via.placeholder.com/154"]
   }
 ]
 }

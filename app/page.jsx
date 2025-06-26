@@ -10,6 +10,12 @@ import Details from "../public/data/Detauls.json";
 // import {ReactComponent as Instagram} from "../public/icons8-instagram.svg"
 
 export default function Home() {
+  // let [cardWidth, setCardWidth] = useState(31.9 + "%");
+   let cardWidth = "31.9%"
+  if (window.document.body.clientWidth < 500){
+   cardWidth = 100+"%"
+      // setCardWidth(100+"%");
+  }
   const cards = [
     cardsData["data"].map((array, index) => {
       return {
@@ -28,27 +34,17 @@ export default function Home() {
             >
               <div className="flex">
               <h2 className="text-xl font-bold text-white mb-4">{array.title}</h2>
-         <div className="pl-2 flex" >
+         <div className="pl-2 flex text-cyan"style={{color : "cyan"}} >
               {array.links.github ? 
-              <a href={array.links.github}  className="flex justify-center">
+              <a href={array.links.github}  className="flex text-cyan justify-center">
                 Github
-              <img
-                            src={`https://img.icons8.com/color/48/000000/github.png`}
-                            alt={"github"}
-                            title={"github"}
-                            className="w-8 h-8 mr-2"
-                          />
+              
                              
                           </a> : "" }
               {array.links.vercel ? 
-              <a href={array.links.vercel}  className="flex justify-center">
+              <a href={array.links.vercel}  className="flex text-cyan justify-center">
                 Vercel
-              <img
-                            src={`/vercel.png`}
-                            alt={"github"}
-                            title={"github"}
-                            className="w-8 h-8 mr-2"
-                          />
+             
                           </a> : "" }
 </div></div>
               <div className="mb-4">
@@ -156,14 +152,28 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   console.log(cards[0])
   useEffect(() => {
+    
+
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => {
         // Only slide up to the third last card
-        if (prevIndex >= (cards[0].length - 3)) {
+        if(cardWidth == "31.9%"){
+
+          console.log("167", cardWidth)
+if (prevIndex >= (cards[0].length - 3)) {
           return 0;
         } else {
           return prevIndex + 1;
         }
+        }
+        else{
+          if (prevIndex >= (cards[0].length -1 )) {
+          return 0;
+        } else {
+          return prevIndex + 1;
+        }
+        }
+        
       });
     }, 3000);
 
@@ -205,7 +215,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-
+  
  let node = document.getElementById("imageText").childNodes;
  let time = 1
  for(let i =0; i< node.length; i++){
@@ -224,7 +234,7 @@ export default function Home() {
       <Message message="Mounting Home Start" />
       <main className="flex flex-col gap-6 px-2 md:px-8 w-full max-w-[1400px]">
         <div className="home-intro grid grid-cols-1 sm:grid-cols-3 gap-4 sm:h-[58.28vh] pb-[2vh]">
-          <div className="head-and-desc sm:col-span-2 w-full h-full flex flex-col justify-between stamp-border">
+          <div className="head-and-desc sm:col-span-2 w-full h-full flex flex-col justify-between stamp-border" style={{zIndex : "-1"}}>
             <div
               className="head pt-2"
               style={{ fontSize: "clamp(16px, 2.5vw, 24px)", marginBottom: "0.5vh" }}
@@ -235,29 +245,24 @@ export default function Home() {
                   Aman Kumar
                 </div>
                 <div className="pl-[1vh] svgs flex gap-[0.5vh]">
+                  
                   <div className="profilesSVG">
-                    <img
-                      src="/icons8-instagram.svg"
-                      alt="Instagram"
-                      className="inline-block"
-                      style={{ width: "3.5vh", height: "3.5vh", minWidth: 18, minHeight: 18 }}
-                    />
-                  </div>
-                  <div className="profilesSVG">
+                    <a href="https://github.com/23f2005380/">
                     <img
                       src="/icons8-github.svg"
                       alt="Github"
                       className="inline-block"
                       style={{ width: "3.5vh", height: "3.5vh", minWidth: 18, minHeight: 18 }}
-                    />
+                    /></a>
                   </div>
                   <div className="profilesSVG">
+                    <a href="https://www.linkedin.com/in/aman-kumar-a841352a4/">
                     <img
                       src="/icons8-linkedin.svg"
                       alt="LinkedIn"
                       className="inline-block"
                       style={{ width: "3.5vh", height: "3.5vh", minWidth: 18, minHeight: 18 }}
-                    />
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -323,17 +328,18 @@ export default function Home() {
               className="flex transition-transform w-full items-center duration-500 ease-in-out gap-3 h-full"
               style={{
                 // Only slide up to the third last card
-                transform: `translateX(-${currentIndex * 33.5}%)`,
+                transform: cardWidth == "31.9%" ? `translateX(-${currentIndex * 33.5}%)` : `translateX(-${currentIndex * 103.9}%)`,
                 width: "100%",
                 height: "100%",
               }}
             >
+             
               {cards[0].map((card, index) => (
                 <div
                   key={index}
                   className="flex-shrink-0 flex justify-center items-center cardProject"
                   style={{
-                    width: "31.9%",
+                    width: cardWidth,
                     height: "20vh",
                     minHeight: "80px",
                     maxHeight: "20vh",
@@ -410,7 +416,7 @@ export default function Home() {
       </main>
      
       <footer className="w-full" style={{ minHeight: "2vh" }}></footer>
-      {/* <BackgroundAnimation /> */}
+      
     </div>
   );
 }

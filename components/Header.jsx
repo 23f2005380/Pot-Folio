@@ -30,6 +30,7 @@ export default function Header() {
             onClick={() => {
               const menu = document.getElementById("mobile-menu");
               menu.classList.toggle("hidden");
+              menu.style.zIndex = "999"
             }}
           >
             ☰
@@ -40,20 +41,20 @@ export default function Header() {
       {/* Mobile menu */}
       <div
         id="mobile-menu"
-        className="hidden flex flex-col gap-4 mt-4 sm:hidden text-center"
+        className=" hidden w-full flex flex-col gap-4 mt-4 sm:hidden text-center bg-[#658964] rounded" style={{zIndex : "658954"}}
       >
-        <a href="#home" className="text-white hover:text-gray-300">
-          Home
-        </a>
-        <a href="#about" className="text-white hover:text-gray-300">
-          About
-        </a>
-        <a href="#services" className="text-white hover:text-gray-300">
-          Services
-        </a>
-        <a href="#contact" className="text-white hover:text-gray-300">
-          Contact
-        </a>
+          <a href="/" className="text-white hover:text-gray-300">
+            Home
+          </a>
+          <a href="/Certi" className="text-white hover:text-gray-300">
+            Certificates
+          </a>
+          <a href="/Resum" className="text-white hover:text-gray-300">
+            Resume
+          </a>
+          <a href="/Contact" className="text-white hover:text-gray-300">
+            Contact
+          </a>
       </div>
 
       {/* SVG Cloud Section */}

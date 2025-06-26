@@ -438,3 +438,8 @@ transform: rotate(0deg);
 .cardProject:hover {
   scale: 1.05;
 }
+
+#mobile-menu  a:hover {
+  background-color: #b3f1ff;
+  transform: background-color;
+}
