@@ -15,7 +15,7 @@ function ResumePage() {
         <div className={`px-4 sm:px-8 md:px-12 pt-8 sm:pt-10 md:pt-12 transition-all duration-700 ${show ? "resume-fade-in" : ""}`}>
              <div className="flex justify-end mb-6">
                 <a
-                    href="/Aman_Kumar_Resume.pdf"
+                    href="https://drive.google.com/file/d/1m9b6omV0vTUc5--LTZFcPz0-BsMO7xsf/view?usp=sharing"
                     download
                     className="bg-[#7e7edc] hover:bg-[#5e5edc] text-white font-semibold py-2 px-6 rounded-lg shadow transition-all duration-200"
                 >
