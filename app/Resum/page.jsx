@@ -1,21 +1,28 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import "../styles.css";
+import "./animation.css";
 
 function ResumePage() {
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        // Trigger animations after mount
+        setTimeout(() => setShow(true), 100);
+    }, []);
+
     return (
-        <div className="px-4 sm:px-8 md:px-12 pt-8 sm:pt-10 md:pt-12">
-            <div className="openToWork mb-10">
+        <div className={`px-4 sm:px-8 md:px-12 pt-8 sm:pt-10 md:pt-12 transition-all duration-700 ${show ? "resume-fade-in" : ""}`}>
+            <div className={`openToWork mb-10 ${show ? "resume-fade-in-up resume-delay-1" : ""}`}>
                 <div className="text-3xl sm:text-4xl font-bold text-white mb-4 drop-shadow-[0_2px_16px_rgba(126,126,220,0.7)]">
                     #Open to Work
                 </div>
-                <div className="flex justify-center flex-col mt-2 sm:flex-row gap-20">
+                <div className="flex justify-center flex-col mt-2 sm:flex-row gap-15">
                     <div
                         className="px-6 py-2 rounded-lg font-semibold text-lg"
                         style={{
-                           
                             color: "#fff",
-                            boxShadow: "0 0 8px 2px #7e7edc, 0 0 32px 8px #5eead4",
-                            // textShadow: "0 2px 8px #7e7edc, 0 0 2px #fff",
+                            boxShadow: "0 0 8px 2px #7e7edc, 0 0 8px 2px #5eead4",
                         }}
                     >
                         Frontend Developer
@@ -23,10 +30,8 @@ function ResumePage() {
                     <div
                         className="px-6 py-2 rounded-lg font-semibold text-lg"
                         style={{
-                            
                             color: "#fff",
-                            boxShadow: "0 0 8px 2px #f472b6, 0 0 32px 8px #818cf8",
-                            // textShadow: "0 2px 8px #818cf8, 0 0 2px #fff",
+                            boxShadow: "0 0 8px 2px #f472b6, 0 0 8px 2px #818cf8",
                         }}
                     >
                         Full Stack Developer
@@ -34,10 +39,8 @@ function ResumePage() {
                     <div
                         className="px-6 py-2 rounded-lg font-semibold text-lg"
                         style={{
-                           
                             color: "#fff",
-                            boxShadow: "0 0 8px 2px #34d399, 0 0 32px 8px #fbbf24",
-                            // textShadow: "0 2px 8px #34d399, 0 0 2px #fff",
+                            boxShadow: "0 0 8px 2px #34d399, 0 0 8px 2px #fbbf24",
                         }}
                     >
                         Backend Developer
@@ -45,23 +48,35 @@ function ResumePage() {
                 </div>
             </div>
             <div
-                className="  p-4 mb-5 sm:p-6 rounded-r-[50px] border-[6px] md:border-[10px] border-[#658987] border-l-0 font-mono text-[0.95rem] md:text-[1rem] text-[#213256] bg-white/80"
+                className={`p-4 mb-5 sm:p-6 rounded-r-[50px] border-[6px] md:border-[10px] border-[#658987] border-l-0 font-mono text-[0.95rem] md:text-[1rem] text-[#213256] bg-white/80 shadow-lg ${show ? "resume-fade-in-up resume-delay-2" : ""}`}
                 style={{
                     borderRadius: "0px 32px 32px 0px",
                     fontFamily: "monospace",
-                    fontSize : "18px"
+                    fontSize: "18px",
+                    background: "linear-gradient(90deg, #f0fdfa 0%, #e0e7ff 100%)",
                 }}
             >
-                Hey, Thank you for visiting this site. Myself Aman Kumar, currently studying in IIT Madras and pursuing BS in Data Science and Applications.
-                I have experience of freelancing as a Full Stack Developer, few of my individual projects have been listed below. What I like to do is to build
-                and experiment with algorithms and animations. Over the years what I mostly learned was to 
-                <div>
-                <li>giving importance to planning before coding</li> <li>coding with AI makes you less creative and lazy</li>
-                <li> AI should be used only for reduntant tasks and basic setups</li><li> never think you mastered any language as even mastering HTML is not feasiable.</li>
-            </div></div>
+                <span role="img" aria-label="wave" style={{ fontSize: "1.5rem" }}>👋</span> <strong>Welcome!</strong> Thanks for stopping by.<br /><br />
+                I'm <span style={{ color: "#7e7edc", fontWeight: "bold" }}>Aman Kumar</span>, a passionate learner and builder currently pursuing a BS in Data Science and Applications at IIT Madras.<br /><br />
+                <span style={{ color: "#10b981", fontWeight: "bold" }}>What drives me?</span> <br />
+                <ul className="list-disc pl-5">
+                    <li>Turning ideas into interactive web experiences</li>
+                    <li>Experimenting with algorithms, animations, and creative UI</li>
+                    <li>Building robust full stack solutions</li>
+                </ul>
+                <br />
+                <span style={{ color: "#f59e42", fontWeight: "bold" }}>Lessons learned along the way:</span>
+                <ul className="list-decimal pl-5">
+                    <li>Thoughtful planning is the foundation of great code</li>
+                    <li>AI tools are best for repetitive tasks—creativity comes from you!</li>
+                    <li>Stay curious—there’s always more to master, even in the basics</li>
+                </ul>
+                <br />
+                <span style={{ color: "#818cf8" }}>Scroll down to see some of my favorite projects and achievements!</span>
+            </div>
             <div id="prosemirror-context-children"></div>
             <div
-                className="pb-8 sm:pb-10 md:pb-12"
+                className={`pb-8 sm:pb-10 md:pb-12 ${show ? "resume-fade-in-up resume-delay-3" : ""}`}
                 id="prosemirror-editor-container"
             >
                 <div
@@ -82,7 +97,6 @@ function ResumePage() {
                         overflowX: "auto",
                     }}
                 >
-                    {/* ...rest of your content... */}
                     <p>
                         <strong style={{ color: "#7e7edc" }}>Aman Kumar</strong>
                         <br />

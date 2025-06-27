@@ -1,0 +1,25 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.resume-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.resume-fade-in {
+  animation: fadeIn 1.2s ease both;
+}
+.resume-delay-1 { animation-delay: 0.2s; }
+.resume-delay-2 { animation-delay: 0.4s; }
+.resume-delay-3 { animation-delay: 0.6s; }
+.resume-delay-4 { animation-delay: 0.8s; }
+.resume-delay-5 { animation-delay: 1s; }

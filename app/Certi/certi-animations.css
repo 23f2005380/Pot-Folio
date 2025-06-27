@@ -1,0 +1,17 @@
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.certi-drop {
+  animation: dropIn 0.7s cubic-bezier(.23,1.12,.32,1) both;
+}

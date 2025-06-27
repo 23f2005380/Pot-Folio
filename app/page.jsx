@@ -10,18 +10,19 @@ import Details from "../public/data/Detauls.json";
 // import {ReactComponent as Instagram} from "../public/icons8-instagram.svg"
 
 export default function Home() {
-  // let [cardWidth, setCardWidth] = useState(31.9 + "%");
-   let cardWidth = "31.9%"
-   try {
- if (window.document.body.clientWidth < 500){
-   cardWidth = 100+"%"
-      // setCardWidth(100+"%");
-  }
-
-   }
-   catch(erro){
-    console.log("Could not set window")
-   }
+  let [cardWidth, setCardWidth] = useState(31.9 + "%");
+   useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 500) {
+        setCardWidth("100%");
+      } else {
+        setCardWidth("31.9%");
+      }
+    }
+    handleResize(); // Set on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
  
   const cards = [
@@ -253,25 +254,34 @@ if (prevIndex >= (cards[0].length - 3)) {
                   Aman Kumar
                 </div>
                 <div className="pl-[1vh] svgs flex gap-[0.5vh]">
-                  
-                  <div className="profilesSVG">
-                    <a href="https://github.com/23f2005380/">
+                  <a
+                    href="https://github.com/23f2005380/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="profilesSVG cursor-pointer flex items-center"
+                    title="GitHub"
+                  >
                     <img
                       src="/icons8-github.svg"
                       alt="Github"
                       className="inline-block"
                       style={{ width: "3.5vh", height: "3.5vh", minWidth: 18, minHeight: 18 }}
-                    /></a>
-                  </div>
-                  <div className="profilesSVG">
-                    <a href="https://www.linkedin.com/in/aman-kumar-a841352a4/">
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/aman-kumar-a841352a4/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="profilesSVG cursor-pointer flex items-center"
+                    title="LinkedIn"
+                  >
                     <img
                       src="/icons8-linkedin.svg"
                       alt="LinkedIn"
                       className="inline-block"
                       style={{ width: "3.5vh", height: "3.5vh", minWidth: 18, minHeight: 18 }}
-                    /></a>
-                  </div>
+                    />
+                  </a>
                 </div>
               </div>
               <div
