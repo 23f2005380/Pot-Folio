@@ -254,34 +254,29 @@ if (prevIndex >= (cards[0].length - 3)) {
                   Aman Kumar
                 </div>
                 <div className="pl-[1vh] svgs flex gap-[0.5vh]">
-                  <a
-                    href="https://github.com/23f2005380/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="profilesSVG cursor-pointer flex items-center"
-                    title="GitHub"
-                  >
-                    <img
+                  
+                  <div className="profilesSVG" style={{zIndex : "200"}}>
+                     <a href="https://github.com/23f2005380/">
+                   
+                    {/* <img
                       src="/icons8-github.svg"
                       alt="Github"
                       className="inline-block"
                       style={{ width: "3.5vh", height: "3.5vh", minWidth: 18, minHeight: 18 }}
-                    />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/aman-kumar-a841352a4/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="profilesSVG cursor-pointer flex items-center"
-                    title="LinkedIn"
-                  >
-                    <img
+                    /> */}
+                    Github</a>
+                  </div>
+                  <div className="profilesSVG">
+                    <a href="https://www.linkedin.com/in/aman-kumar-a841352a4/">
+                    {/* <img
                       src="/icons8-linkedin.svg"
                       alt="LinkedIn"
                       className="inline-block"
                       style={{ width: "3.5vh", height: "3.5vh", minWidth: 18, minHeight: 18 }}
-                    />
-                  </a>
+                    /> */}
+                    Linkedin
+                    </a>
+                  </div>
                 </div>
               </div>
               <div

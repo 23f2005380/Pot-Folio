@@ -13,6 +13,15 @@ function ResumePage() {
 
     return (
         <div className={`px-4 sm:px-8 md:px-12 pt-8 sm:pt-10 md:pt-12 transition-all duration-700 ${show ? "resume-fade-in" : ""}`}>
+             <div className="flex justify-end mb-6">
+                <a
+                    href="/Aman_Kumar_Resume.pdf"
+                    download
+                    className="bg-[#7e7edc] hover:bg-[#5e5edc] text-white font-semibold py-2 px-6 rounded-lg shadow transition-all duration-200"
+                >
+                    Download Resume (PDF)
+                </a>
+            </div>
             <div className={`openToWork mb-10 ${show ? "resume-fade-in-up resume-delay-1" : ""}`}>
                 <div className="text-3xl sm:text-4xl font-bold text-white mb-4 drop-shadow-[0_2px_16px_rgba(126,126,220,0.7)]">
                     #Open to Work
@@ -164,7 +173,7 @@ function ResumePage() {
                         <br />
                         • Gained 40+ users and continues to be updated monthly.
                         <br />
-                        🔗 <a href="#" target="_blank" rel="noopener noreferrer">Live Site</a>
+                        🔗 <a href="https://iitm-resources.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
                     </p>
                     <p>
                         <strong>HouseHold Services 2</strong> | <em>Vue.js, Flask, Redis, Celery</em>
@@ -175,7 +184,7 @@ function ResumePage() {
                         <br />
                         • Learned the importance of structured planning, debugging, and ER design.
                         <br />
-                        🔗 <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        🔗 <a href="https://github.com/23f2005380/23f2005380_Housing" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </p>
                     <p>
                         <strong>Sponsorship Platform</strong> | <em>Flask, Jinja, SQLAlchemy, Matplotlib</em>
@@ -186,7 +195,7 @@ function ResumePage() {
                         <br />
                         • Refined backend models and structure mid-development to overcome real-time issues.
                         <br />
-                        🔗 <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        🔗 <a href="https://github.com/23f2005380/SponsorAndInvestor2" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </p>
                     <p>
                         <strong>2D Games Portfolio</strong> | <em>JavaScript</em>
