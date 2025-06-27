@@ -264,7 +264,7 @@ if (prevIndex >= (cards[0].length - 3)) {
                       className="inline-block"
                       style={{ width: "3.5vh", height: "3.5vh", minWidth: 18, minHeight: 18 }}
                     /> */}
-                    Github</a>
+                    </a>
                   </div>
                   <div className="profilesSVG">
                     <a href="https://www.linkedin.com/in/aman-kumar-a841352a4/">
@@ -274,7 +274,7 @@ if (prevIndex >= (cards[0].length - 3)) {
                       className="inline-block"
                       style={{ width: "3.5vh", height: "3.5vh", minWidth: 18, minHeight: 18 }}
                     /> */}
-                    Linkedin
+                    
                     </a>
                   </div>
                 </div>
