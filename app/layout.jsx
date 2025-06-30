@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header.jsx";
+import Float from "../components/float"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       style={{backgroundColor: '#0B192C'}}>
         <Header />
         {children}
+              <Float />
       </body>
     </html>
   );

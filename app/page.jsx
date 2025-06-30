@@ -7,6 +7,7 @@ import BackgroundAnimation from "../components/backgroundAnimations";
 import Learning from "../components/Learning.jsx";
 import cardsData from "../public/data/dataCards.json";
 import Details from "../public/data/Detauls.json";
+import Float from "../components/float";
 // import {ReactComponent as Instagram} from "../public/icons8-instagram.svg"
 
 export default function Home() {
@@ -352,7 +353,7 @@ if (prevIndex >= (cards[0].length - 3)) {
                   key={index}
                   className="flex-shrink-0 flex justify-center items-center cardProject"
                   style={{
-                    width: cardWidth,
+                   
                     height: "20vh",
                     minHeight: "80px",
                     maxHeight: "20vh",
@@ -426,6 +427,7 @@ if (prevIndex >= (cards[0].length - 3)) {
           </div>
         </div>
       </div>
+
       </main>
      
       <footer className="w-full" style={{ minHeight: "2vh" }}></footer>
