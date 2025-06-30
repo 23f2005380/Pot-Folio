@@ -2,6 +2,7 @@
 import {useState} from "react"
 import "../app/styles.css"
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Float(){
   const [menuOpen, setMenuOpen] = useState(true);
@@ -48,9 +49,9 @@ console.log(menuOpen)
     return (
         <div className="float fixed bottom-[5%] right-[5%]">
           <div className="circle flex justify-center items-center" id="circle1">
-          <a href="/">
+          <Link href="/">
           <img src={"https://img.icons8.com/?size=100&id=2797&format=png&color=000000"} width={40} height={40} alt={"Resume"}/>
-          </a>
+          </Link> 
         </div>
         <div className="circle circle2 flex justify-center items-center" id="circle2">
           <a href="/Certi">
