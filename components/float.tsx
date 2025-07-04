@@ -54,19 +54,19 @@ console.log(menuOpen)
           </Link> 
         </div>
         <div className="circle circle2 flex justify-center items-center" id="circle2">
-          <a href="/Certi">
+          <Link href="/Certi">
           <img src={"https://img.icons8.com/?size=100&id=11215&format=png&color=000000"} width={40} height={40} alt={"Resume"}/>
-          </a>
+          </Link>
         </div>
         <div className="circle circle3 flex justify-center items-center" id="circle3">
-          <a href="/Resum">
+          <Link href="/Resum">
           <img src={"https://img.icons8.com/?size=100&id=23882&format=png&color=000000"} width={40} height={40} alt={"Resume"}/>
-          </a>
+          </Link>
         </div>
         <div className="circle circle4 flex justify-center items-center" id="circle4">
-          <a href="/Contact">
+          <Link href="/Contact">
           <img src={"https://img.icons8.com/?size=100&id=7863&format=png&color=000000"} width={40} height={40} alt={"Resume"}/>
-          </a>
+          </Link>
         </div>
         <div className="sm:hidden relative flex items-center z-[1000] bg-[#1bad1b] w-[60px] h-[60px] flex justify-center items-center" style={{borderRadius : "50%"}}>
           <button

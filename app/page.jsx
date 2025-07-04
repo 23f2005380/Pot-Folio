@@ -167,7 +167,9 @@ export default function Home() {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => {
         // Only slide up to the third last card
-        if(cardWidth == "31.9%"){
+         let element  = document.getElementsByClassName("cardProject")[0]
+         element = element.style.width;
+        if(element == "31.9%"){
 
           console.log("167", cardWidth)
 if (prevIndex >= (cards[0].length - 3)) {

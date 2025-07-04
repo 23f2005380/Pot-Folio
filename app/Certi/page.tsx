@@ -27,7 +27,22 @@ export default function Certificate() {
                 ">
                     
                     <div className="absolute inset-0 border-4  rounded-xl pointer-events-none"></div>
-                    <iframe src="https://drive.google.com/file/d/1yA1wCJi7HXGRtxZqtmZNJ1ueE_-iFnHF/preview" width="640" height="480" allow="autoplay"></iframe>
+                    <iframe
+                        src="https://drive.google.com/file/d/1yA1wCJi7HXGRtxZqtmZNJ1ueE_-iFnHF/preview"
+                        width="100%"
+                        height="100%"
+                        allow="autoplay"
+                        style={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                            borderRadius: "1rem",
+                            background: "white",
+                        }}
+                    ></iframe>
                 </div>
             </div>
             {/* Certificates grid */}
