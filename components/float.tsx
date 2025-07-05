@@ -47,15 +47,15 @@ console.log(menuOpen)
     }
   }
     return (
-        <div className="float fixed bottom-[5%] right-[5%]">
+        <div className="sm:hidden float fixed bottom-[5%] right-[5%]">
           <div className="circle flex justify-center items-center" id="circle1">
           <Link href="/">
-          <img src={"https://img.icons8.com/?size=100&id=2797&format=png&color=000000"} width={40} height={40} alt={"Resume"}/>
+          <img src={"https://img.icons8.com/?size=100&id=2797&format=png&color=000000"} width={40} height={40} alt={"Home"}/>
           </Link> 
         </div>
         <div className="circle circle2 flex justify-center items-center" id="circle2">
           <Link href="/Certi">
-          <img src={"https://img.icons8.com/?size=100&id=11215&format=png&color=000000"} width={40} height={40} alt={"Resume"}/>
+          <img src={"https://img.icons8.com/?size=100&id=11215&format=png&color=000000"} width={40} height={40} alt={"Certificate"}/>
           </Link>
         </div>
         <div className="circle circle3 flex justify-center items-center" id="circle3">
@@ -65,7 +65,7 @@ console.log(menuOpen)
         </div>
         <div className="circle circle4 flex justify-center items-center" id="circle4">
           <Link href="/Contact">
-          <img src={"https://img.icons8.com/?size=100&id=7863&format=png&color=000000"} width={40} height={40} alt={"Resume"}/>
+          <img src={"https://img.icons8.com/?size=100&id=7863&format=png&color=000000"} width={40} height={40} alt={"Contact"}/>
           </Link>
         </div>
         <div className="sm:hidden relative flex items-center z-[1000] bg-[#1bad1b] w-[60px] h-[60px] flex justify-center items-center" style={{borderRadius : "50%"}}>

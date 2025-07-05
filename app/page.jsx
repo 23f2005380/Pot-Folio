@@ -8,6 +8,7 @@ import Learning from "../components/Learning.jsx";
 import cardsData from "../public/data/dataCards.json";
 import Details from "../public/data/Detauls.json";
 import Float from "../components/float";
+
 // import {ReactComponent as Instagram} from "../public/icons8-instagram.svg"
 
 export default function Home() {
@@ -167,9 +168,10 @@ export default function Home() {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => {
         // Only slide up to the third last card
-         let element  = document.getElementsByClassName("cardProject")[0]
-         element = element.style.width;
-        if(element == "31.9%"){
+         let element  = document.getElementsByTagName("body")[0]
+         element = element.clientWidth;
+         console.log(element)
+        if(element > 400){
 
           console.log("167", cardWidth)
 if (prevIndex >= (cards[0].length - 3)) {

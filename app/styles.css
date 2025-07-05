@@ -67,7 +67,6 @@
       line-height: 0.5;
       font-size: 16px;
       letter-spacing: -6px;
-      
     }
     .cardProject {
       width : 100%;
@@ -77,9 +76,8 @@
     .clamation {
       line-height: 0.8;
       font-size: 16px;
-       
     }
-    .cardProject {
+   .cardProject {
       width : 100%;
     }
    
@@ -89,7 +87,6 @@
         line-height: 0.8;
         font-size: 31px;
         letter-spacing: -14px;
-        width: 33.9%;
         animation: pop 1s ease-in; 
       }
       .cardProject {
@@ -480,4 +477,5 @@ transform: rotate(0deg);
   transition: all 1s ;
 
 }
+
 
